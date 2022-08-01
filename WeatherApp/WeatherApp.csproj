@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Newtonsoft.Json.Bson" />
+    <None Remove="Json.Net" />
+    <None Remove="Newtonsoft.Json.Schema" />
+    <None Remove="WeatherInfo\" />
+    <None Remove="System.Drawing.Common" />
+    <None Remove="Tesseract.Drawing" />
+    <None Remove="System.Drawing" />
+    <None Remove="EPPlus" />
+    <None Remove="MySql.Data" />
+    <None Remove="MySql\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Telegram.Bot" />
+    <None Remove="Telegram.Bot.Common" />
+    <None Remove="Telegram.Bot.AspNet" />
+    <None Remove="Telegram.Bot.CommandHandler" />
+    <None Remove="Telegram.Bot.Extensions.Polling" />
+    <None Remove="BotHandlers\" />
+    <None Remove="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Json.Net" Version="1.0.33" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="Telegram.Bot" Version="18.0.0" />
+    <PackageReference Include="Telegram.Bot.Common" Version="1.0.10" />
+    <PackageReference Include="Telegram.Bot.CommandHandler" Version="1.5.0" />
+    <PackageReference Include="Telegram.Bot.Extensions.Polling" Version="1.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WeatherInfo\" />
+    <Folder Include="MySql\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="BotHandlers\" />
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing">
+      <HintPath>System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Downloads\mysql-connector-net-8\net6.0\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
